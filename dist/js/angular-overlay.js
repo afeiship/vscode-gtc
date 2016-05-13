@@ -55,7 +55,7 @@
 
       function visible(inValue) {
         $timeout(function(){
-          scope.visible = inValue;
+          scope.visible = !!inValue;
         },0);
       }
 
