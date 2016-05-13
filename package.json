@@ -1,0 +1,15 @@
+{
+  "name": "angular-overlay",
+  "version": "0.0.0",
+  "description": "AngularJS directive used to prevent the content below it.",
+  "homepage": "https://github.com/afeiship/angular-overlay",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0"
+  }
+}

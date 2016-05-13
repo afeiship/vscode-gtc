@@ -1,0 +1,24 @@
+{
+  "name": "angular-overlay",
+  "description": "AngularJS directive used to prevent the content below it.",
+  "main": "dist/angular-overlay.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/angular-overlay",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}
