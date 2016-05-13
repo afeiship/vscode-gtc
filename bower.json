@@ -1,6 +1,6 @@
 {
-  "name": "angular-toast",
-  "description": "A light simple toast like `IOS/Android system Toast widget`,based on angularjs &amp; sass.",
+  "name": "angular-overlay",
+  "description": "AngularJS directive used to prevent the content below it.",
   "main": "dist",
   "authors": [
     "afei"

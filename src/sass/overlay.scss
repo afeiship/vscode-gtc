@@ -9,6 +9,8 @@
   background: rgba(#000,0.8);
   transition: opacity 0.3s;
 
+
+
   &[data-visible=true] {
     opacity: 1;
     z-index: 1001;
