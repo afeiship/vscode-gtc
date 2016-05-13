@@ -1,15 +1,18 @@
 {
-  "name": "angular-overlay",
-  "description": "AngularJS directive used to prevent the content below it.",
-  "main": "dist/angular-overlay.js",
+  "name": "angular-toast",
+  "description": "A light simple toast like `IOS/Android system Toast widget`,based on angularjs &amp; sass.",
+  "main": "dist",
   "authors": [
     "afei"
   ],
   "license": "MIT",
   "keywords": [
-    "next"
+    "angular",
+    "toast",
+    "ionic",
+    "sass"
   ],
-  "homepage": "https://github.com/afeiship/angular-overlay",
+  "homepage": "https://github.com/afeiship/angular-toast",
   "moduleType": [
     "amd"
   ],
@@ -20,5 +23,8 @@
     "test",
     "tests",
     "src"
-  ]
+  ],
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
 }
