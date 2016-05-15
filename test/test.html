@@ -21,7 +21,6 @@
 <script type="text/javascript">
   var TestModule = angular.module('TestApp', ['nx.widget'])
     .controller('MainCtrl', function ($scope, nxOverlay) {
-      window.sp=$scope;
       $scope.show = function () {
         nxOverlay.visible(true);
       };
