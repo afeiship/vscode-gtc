@@ -1,7 +1,10 @@
 {
   "name": "angular-overlay",
   "description": "AngularJS directive used to prevent the content below it.",
-  "main": "dist",
+  "main": [
+    "dist/css/overlay.css",
+    "dist/js/angular-overlay.js"
+  ],
   "authors": [
     "afei"
   ],
