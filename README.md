@@ -1,25 +1,34 @@
-#angular-overlay
-AngularJS directive used to prevent the content below it.
+# next-fetch-with-retry
+> Fetch with try for next.
 
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
-##usage:
-+ html part
-```html
-<link rel="stylesheet" type="text/css" href="../dist/css/overlay.css"/>
-<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="../dist/js/angular-overlay.js"></script>
+## installation
+```bash
+npm install -S @jswork/next-fetch-with-retry
 ```
 
-+ javascript part:
-```javascript
-var TestModule = angular.module('TestApp', ['nx.widget'])
-    .controller('MainCtrl', function ($scope, nxOverlay) {
-      $scope.show = function () {
-        nxOverlay.visible(true);
-      };
+## usage
+```js
+import '@jswork/next-fetch-with-retry';
 
-      $scope.hide = function () {
-        nxOverlay.visible(false);
-      };
-    });
+//DOCS here!
 ```
+
+## license
+Code released under [the MIT license](https://github.com/afeiship/next-fetch-with-retry/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/next-fetch-with-retry
+[version-url]: https://npmjs.org/package/@jswork/next-fetch-with-retry
+
+[license-image]: https://img.shields.io/npm/l/@jswork/next-fetch-with-retry
+[license-url]: https://github.com/afeiship/next-fetch-with-retry/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-fetch-with-retry
+[size-url]: https://github.com/afeiship/next-fetch-with-retry/blob/master/dist/next-fetch-with-retry.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-fetch-with-retry
+[download-url]: https://www.npmjs.com/package/@jswork/next-fetch-with-retry
