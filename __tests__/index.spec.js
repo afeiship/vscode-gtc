@@ -2,7 +2,7 @@
   require('../src');
   require('@jswork/next-fetch-with-timeout');
   const fetch = require('node-fetch');
-  const newFetch = nx.fetchWithTimeout(nx.fetchWithRetry(fetch));
+  const newFetch = nx.fetchWithRetry(nx.fetchWithTimeout(fetch));
 
   jest.setTimeout(50 * 1000);
 
@@ -20,13 +20,6 @@
           return false;
         }
       })
-        .catch((err) => {
-          console.log('err:', err);
-        })
-        .then((res) => res.text())
-        .then((res) => {
-          console.log(res);
-        })
         .finally(() => {
           console.log('done');
           done();
