@@ -7,24 +7,14 @@
   jest.setTimeout(50 * 1000);
 
   describe('api.basic test', () => {
-    test('nx.fetchWithRetry', function (done) {
-      betterFetch('https://www.google1.com/')
-        .then((res) => {
-          console.log('res');
-        })
-        .catch((err) => {
-          console.log('err::::', err);
-        })
-        .finally((e) => {
-          console.log('done');
-          done();
+    test('nx.fetchWithRetry with 3 times', function (done) {
+      betterFetch('https://www.google1.com/').catch((err) => {
+        expect(err).toEqual({
+          type: 'retry_max',
+          message: 'Retry max from `next-fetch-with-retry`'
         });
-
-      // const obj1 = { name: 'fei' };
-      // const obj2 = { email: '1290657123@qq.com' };
-      // const result = {};
-      // nx.fetchWithRetry(result, obj1, obj2);
-      // expect(result.name, obj1.name).toBe(null);
+        done();
+      });
     });
   });
 })();

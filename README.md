@@ -15,7 +15,12 @@ npm install -S @jswork/next-fetch-with-retry
 ```js
 import '@jswork/next-fetch-with-retry';
 
-//DOCS here!
+const betterFetch = nx.fetchWithRetry(fetch);
+
+betterFetch('https://www.google1.com/')
+  .catch((err) => {
+    console.log('err::::', err);
+  });
 ```
 
 ## license
