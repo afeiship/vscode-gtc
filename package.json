@@ -8,7 +8,8 @@
     "email": "1290657123@qq.com"
   },
   "displayName": "Gtc extension for vscode.",
-  "publisher": "my-publisher",
+  "icon": "images/icon.png",
+  "publisher": "aric.zheng",
   "engines": {
     "vscode": "^1.60.0"
   },
