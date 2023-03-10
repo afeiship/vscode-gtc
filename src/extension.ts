@@ -44,9 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
               cmds.unshift(`cd ${userDir}`);
               return new Promise((resolve, reject) => {
                 execSync(cmds.join(' && '));
-                vscode.window.showInformationMessage(
-                  `You have execute '${icon}/${selection.value}' successfully!`
-                );
+                vscode.window.showInformationMessage(`You have execute '${icon}/${selection.value}' successfully!`);
                 resolve(null);
               });
             }
