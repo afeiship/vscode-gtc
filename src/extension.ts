@@ -6,7 +6,6 @@ import { execSync } from "child_process";
 import fs from "fs";
 
 const cwd = process.cwd();
-const pkg = require(`${cwd}/package.json`);
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -23,6 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
         const { icon, cmds, message } = nodeGtc(options, selection.value);
         try {
           // 1. udpate package.json
+          const pkg = require(`${cwd}/package.json`);
           pkg.gtc = message;
           fs.writeFileSync(`${cwd}/package.json`, JSON.stringify(pkg, null, 2));
 

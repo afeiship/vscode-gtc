@@ -2,7 +2,7 @@
 > Gtc extension for vscode.
 > vscode-gtc 是一款由我自主开发的 VS Code 插件。它可以帮助你执行 gtc 命令，从而生成一条 Git message，使你能够更加便捷地完成 Github、Gitlab 等 CI 上的部署工作。
 
-![](https://p.ipic.vip/b9oc62.png)
+![](https://p.ipic.vip/fj3swd.png)
 
 ## installation
 1. 在 VS Code 中搜索 `vscode-gtc` 插件，并进行安装。
@@ -14,5 +14,6 @@
 3. 选择你需要执行的命令，然后回车。
 
 ## snapshot
-![](https://p.ipic.vip/dgyvbr.png)
+- Search: ![](https://p.ipic.vip/dgyvbr.png)
+- Select: ![](https://p.ipic.vip/dpngtl.png)
 
