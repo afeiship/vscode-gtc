@@ -10,7 +10,7 @@
   "categories": [
     "Other"
   ],
-  "publisher":"aric.zheng",
+  "publisher":"afeiship",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
