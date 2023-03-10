@@ -1,69 +1,82 @@
 {
-	"name": "vscode-gtc",
-	"displayName": "vscode-gtc",
-	"description": "Gtc extension for vscode.",
-	"version": "1.0.1",
-	"icon": "images/icon.png",
-	"engines": {
-		"vscode": "^1.76.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"publisher": "afeiship",
-	"activationEvents": [],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "vscode-gtc.gtc",
-				"title": "GTC: Goto `GTC` command list."
-			}
-		],
-		"languages": [
-			{
-				"id": "json",
-				"aliases": [
-					"gtc",
-					"gtcrc"
-				],
-				"extensions": [
-					".gtc",
-					".gtcrc"
-				]
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./"
-	},
-	"devDependencies": {
-		"@types/glob": "^8.1.0",
-		"@types/mocha": "^10.0.1",
-		"@types/node": "16.x",
-		"@types/vscode": "^1.76.0",
-		"@typescript-eslint/eslint-plugin": "^5.53.0",
-		"@typescript-eslint/parser": "^5.53.0",
-		"@vscode/test-electron": "^2.2.3",
-		"eslint": "^8.34.0",
-		"glob": "^8.1.0",
-		"mocha": "^10.2.0",
-		"typescript": "^4.9.5"
-	},
-	"dependencies": {
-		"@jswork/node-gtc": "^1.0.2"
-	},
-	"__metadata": {
-		"id": "d3605352-ebeb-4f8b-80ce-f073853a6a85",
-		"publisherId": "5890d9f5-8633-4da9-a540-bd9c7740532c",
-		"publisherDisplayName": "afeiship",
-		"targetPlatform": "undefined",
-		"isApplicationScoped": false,
-		"updated": true,
-		"isPreReleaseVersion": false,
-		"installedTimestamp": 1678457533535,
-		"preRelease": false
-	}
+  "name": "vscode-gtc",
+  "displayName": "vscode-gtc",
+  "description": "Gtc extension for vscode.",
+  "version": "1.0.2",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "publisher": "afeiship",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-gtc.gtc",
+        "title": "GTC: Goto `GTC` command list."
+      },
+      {
+        "command": "vscode-gtc.gtc:init",
+        "title": "GTC: Generate `.gtcrc` file."
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vscode-gtc.gtc",
+        "key": "ctrl+shift+z",
+        "mac": "ctrl+shift+z",
+        "when": "editorTextFocus"
+      }
+    ],
+    "languages": [
+      {
+        "id": "json",
+        "aliases": [
+          "gtc",
+          "gtcrc"
+        ],
+        "extensions": [
+          ".gtc",
+          ".gtcrc"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.76.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "@vscode/test-electron": "^2.2.3",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@jswork/node-gtc": "^1.0.4"
+  },
+  "__metadata": {
+    "id": "d3605352-ebeb-4f8b-80ce-f073853a6a85",
+    "publisherId": "5890d9f5-8633-4da9-a540-bd9c7740532c",
+    "publisherDisplayName": "afeiship",
+    "targetPlatform": "undefined",
+    "isApplicationScoped": false,
+    "updated": true,
+    "isPreReleaseVersion": false,
+    "installedTimestamp": 1678457533535,
+    "preRelease": false
+  }
 }

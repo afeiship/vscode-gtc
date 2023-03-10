@@ -1,9 +1,9 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import * as vscode from "vscode";
-import nodeGtc from "@jswork/node-gtc";
-import { execSync } from "child_process";
-import fs from "fs";
+import * as vscode from 'vscode';
+import { nodeGtc, DEFAULT_COMMANDS } from '@jswork/node-gtc';
+import { execSync } from 'child_process';
+import fs from 'fs';
 
 const cwd = process.cwd();
 
@@ -11,12 +11,13 @@ const cwd = process.cwd();
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
   const options = [
-    { value: "beta", label: "🍏 Deploy to beta" },
-    { value: "production", label: "🍎 Deploy to production" },
-    { value: "cache", label: "🍞 Update cache" },
+    { label: '🍏 发布到 beta 环境', value: 'beta' },
+    { label: '🍐 发布到 staging 环境', value: 'staging' },
+    { label: '🍎 发布到 production 环境', value: 'production' },
+    { label: '🍞 仅更新 cache 的 node_modules', value: 'cache' }
   ];
 
-  let disposable = vscode.commands.registerCommand("vscode-gtc.gtc", () => {
+  let disposable1 = vscode.commands.registerCommand('vscode-gtc.gtc', () => {
     vscode.window.showQuickPick(options).then((selection) => {
       if (selection) {
         const { icon, cmds, message } = nodeGtc(options, selection.value);
@@ -27,7 +28,7 @@ export function activate(context: vscode.ExtensionContext) {
           fs.writeFileSync(`${cwd}/package.json`, JSON.stringify(pkg, null, 2));
 
           // 2. exec cmds to commit gtc changes.
-          execSync(cmds.join(" && ")).toString();
+          execSync(cmds.join(' && ')).toString();
 
           // 3.1 show success message if success.
           vscode.window.showInformationMessage(
@@ -35,15 +36,19 @@ export function activate(context: vscode.ExtensionContext) {
           );
         } catch (e) {
           // 3.2 show error message if failed.
-          vscode.window.showErrorMessage(
-            `You have execute '${icon}-${selection.value}' failed!`
-          );
+          vscode.window.showErrorMessage(`You have execute '${icon}-${selection.value}' failed!`);
         }
       }
     });
   });
 
-  context.subscriptions.push(disposable);
+  let disposable2 = vscode.commands.registerCommand('vscode-gtc.gtc:init', () => {
+    // generate `.gtcrc` file
+    fs.writeFileSync('.gtcrc', JSON.stringify(DEFAULT_COMMANDS, null, 2), 'utf-8');
+    vscode.window.showInformationMessage('You have execute gtc-init successfully!');
+  });
+
+  context.subscriptions.push(disposable1, disposable2);
 }
 
 // This method is called when your extension is deactivated

@@ -13,6 +13,11 @@
 2. 在 VS Code 中，`Ctrl+Shift+P` 打开命令面板，输入 `gtc`，然后选择下拉列表
 3. 选择你需要执行的命令，然后回车。
 
+## features
+- [x] GTC: 生成 .gtcrc 文件
+- [x] GTC: 下拉选择执行任务列表
+- [x]`ctrl+shift+z`: 打开 `gtc` 面板
+
 ## snapshot
 - Search: ![](https://p.ipic.vip/dgyvbr.png)
 - Select: ![](https://p.ipic.vip/dpngtl.png)
