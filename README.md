@@ -16,7 +16,7 @@
 ## features
 - [x] GTC: 生成 .gtcrc 文件
 - [x] GTC: 下拉选择执行任务列表
-- [x] `ctrl+shift+z`: 打开 `gtc` 面板
+- [x] `command/ctrl+shift+t`: 打开 `gtc` 面板
 - [x] `.gtcrc` 配置文件语法识别
 
 ## snapshot
