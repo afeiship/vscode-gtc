@@ -7,13 +7,26 @@
     "name": "afeiship",
     "email": "1290657123@qq.com"
   },
+  "scripts": {
+    "build": "tsc"
+  },
+  "main": "./dist/extension.js",
   "displayName": "Gtc extension for vscode.",
   "icon": "images/icon.png",
   "publisher": "aric.zheng",
   "engines": {
     "vscode": "^1.60.0"
   },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
   "contributes": {
+    "commands": [
+      {
+        "command": "gtc:help",
+        "title": "GTC: gtc:help"
+      }
+    ],
     "languages": [
       {
         "id": "json",
@@ -27,5 +40,9 @@
         ]
       }
     ]
+  },
+  "dependencies": {
+    "@types/vscode": "^1.76.0",
+    "vscode": "^1.1.37"
   }
 }

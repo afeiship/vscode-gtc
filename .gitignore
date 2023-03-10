@@ -11,6 +11,7 @@ package-lock.json
 .vscode
 .history
 .idea
+dist
 
 # python cache
 __pycache__
