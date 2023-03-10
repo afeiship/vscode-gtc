@@ -41,6 +41,19 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@jswork/kiv@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/@jswork/kiv/-/kiv-1.0.2.tgz#bcd745f0d47144bdab2a8dea4e6628d6f7b1204d"
+  integrity sha512-Q9oQQfuj1vTucGh45YcRaTJ5srqBQnlGy4ioqlAY9t16q9y4/UWsnxeMUGr6vwgR+LQrk0+zFwjWQTPkoicVbw==
+
+"@jswork/node-gtc@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@jswork/node-gtc/-/node-gtc-1.0.2.tgz#d9a9f0910c164d9bf3da28ac7f562f1d5c4c374d"
+  integrity sha512-RKeg+meU0w9sRZc8/TN0NoRqXAlK+U5w22CZVtmXZ5w919Agq0Po6hWK+zAvmQJTbV2mWJtcD5H4tm+P1RfcJg==
+  dependencies:
+    "@jswork/kiv" "^1.0.2"
+    dateformat "^3.0.3"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -375,6 +388,11 @@ cross-spawn@^7.0.2:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+dateformat@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmmirror.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
+  integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
 
 debug@4, debug@4.3.4, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
   version "4.3.4"
