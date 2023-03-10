@@ -1,54 +1,30 @@
 {
-  "name": "@jswork/next-fetch-with-retry",
+  "name": "vscode-gtc",
   "version": "1.0.0",
-  "description": "Fetch with try for next.",
-  "homepage": "https://github.com/afeiship/next-fetch-with-retry",
+  "description": "Gtc extension for vscode.",
+  "homepage": "https://js.work",
   "author": {
-    "name": "afei",
+    "name": "afeiship",
     "email": "1290657123@qq.com"
   },
-  "scripts": {
-    "build": "gulp",
-    "test": "jest",
-    "start": "node ./express.js",
-    "release": "release-it"
+  "displayName": "Gtc extension for vscode.",
+  "publisher": "my-publisher",
+  "engines": {
+    "vscode": "^1.60.0"
   },
-  "main": "dist/index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
-    "@jswork/gulp-pkg-header": "^1.0.3",
-    "@jswork/next": "^1.0.5",
-    "@jswork/next-fetch-with-timeout": "^1.0.3",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-debug": "^4.0.0",
-    "gulp-header": "^2.0.9",
-    "gulp-ignore": "^3.0.0",
-    "gulp-load-plugins": "^2.0.6",
-    "gulp-rename": "^2.0.0",
-    "gulp-size": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "jest": "^26.6.3",
-    "node-fetch": "^2.6.1",
-    "prettier": "^2.2.1",
-    "release-it": "^14.2.2",
-    "uglify-js": "3.12.4",
-    "uglify-save-license": "^0.4.1"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  },
-  "dependencies": {
-    "fetch-retry": "^4.1.1"
-  },
-  "keywords": [
-    "next",
-    "fetch",
-    "retry",
-    "middleware"
-  ]
+  "contributes": {
+    "languages": [
+      {
+        "id": "json",
+        "aliases": [
+          "gtc",
+          "gtcrc"
+        ],
+        "extensions": [
+          ".gtc",
+          ".gtcrc"
+        ]
+      }
+    ]
+  }
 }

@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "GTC",
+    "scopeName": "source.gtc",
+    "fileTypes": [
+        "gtc",
+        "gtcrc"
+    ],
+    "patterns": [
+        {
+            "include": "#json"
+        }
+    ],
+    "repository": {
+        "json": {
+            "patterns": [
+                {
+                    "include": "source.json"
+                }
+            ]
+        }
+    }
+}
