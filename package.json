@@ -27,8 +27,8 @@
     "keybindings": [
       {
         "command": "vscode-gtc.gtc",
-        "key": "ctrl+shift+z",
-        "mac": "ctrl+shift+z",
+        "key": "command+shift+t",
+        "mac": "ctrl+shift+t",
         "when": "editorTextFocus"
       }
     ],

@@ -44,7 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   let disposable2 = vscode.commands.registerCommand('vscode-gtc.gtc:init', () => {
     // generate `.gtcrc` file
-    fs.writeFileSync('.gtcrc', JSON.stringify(DEFAULT_COMMANDS, null, 2), 'utf-8');
+    fs.writeFileSync('.gtcrc', JSON.stringify(DEFAULT_COMMANDS, null, 2));
     vscode.window.showInformationMessage('You have execute gtc-init successfully!');
   });
 
