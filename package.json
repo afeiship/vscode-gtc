@@ -2,7 +2,7 @@
   "name": "vscode-gtc",
   "displayName": "vscode-gtc",
   "description": "Gtc extension for vscode.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.76.0"
