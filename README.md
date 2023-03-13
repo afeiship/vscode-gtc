@@ -10,7 +10,7 @@
 
 ## usage
 1. 在 VS Code 中，打开你的工程目录。
-2. 在 VS Code 中，`Ctrl+Shift+P` 打开命令面板，输入 `gtc`，然后选择下拉列表
+2. 在 VS Code 中，`Command/Ctrl+Shift+P` 打开命令面板，输入 `gtc`，然后选择下拉列表
 3. 选择你需要执行的命令，然后回车。
 
 ## features
