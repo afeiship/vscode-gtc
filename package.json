@@ -65,12 +65,12 @@
     "eslint": "^8.34.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
-    "prettier": "^2.8.4",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "@jswork/node-gtc": "^1.0.5",
-    "@jswork/noop": "^1.0.0"
+    "@jswork/noop": "^1.0.0",
+    "prettier": "^2.8.4"
   },
   "__metadata": {
     "id": "d3605352-ebeb-4f8b-80ce-f073853a6a85",
