@@ -5,7 +5,7 @@
   "version": "1.0.6",
   "icon": "images/icon.png",
   "engines": {
-    "vscode": "^1.76.0"
+    "vscode": "^1.70.0"
   },
   "categories": [
     "Other"
