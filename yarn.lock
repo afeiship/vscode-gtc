@@ -54,6 +54,11 @@
     "@jswork/kiv" "^1.0.2"
     dateformat "^3.0.3"
 
+"@jswork/noop@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@jswork/noop/-/noop-1.0.0.tgz#e9f080ab835b63fa17141239a2ecbf4731e5fd79"
+  integrity sha512-jlMgESiuHp7W4pFCbhQssFVdzNjRDDnVfmhOIYmHRbKxWwTOEFpgC2e/BbXc/u96N3qTEEy9o3Wie4hUu0fAYw==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1082,7 +1087,7 @@ prelude-ls@^1.2.1:
 
 prettier@^2.8.4:
   version "2.8.4"
-  resolved "https://registry.npmmirror.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
   integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
 
 process-nextick-args@~2.0.0:
