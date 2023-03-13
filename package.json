@@ -12,6 +12,7 @@
   ],
   "publisher": "afeiship",
   "main": "./out/extension.js",
+  "activationEvents": [],
   "contributes": {
     "commands": [
       {
