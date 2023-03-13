@@ -35,7 +35,7 @@ export default async () => {
       vscode.window.withProgress(progressOpts, () => {
         cmds.unshift(`cd ${userDir}`);
         return new Promise((resolve) => {
-          // execSync(cmds.join(' && '));
+          execSync(cmds.join(' && '));
           vscode.window.showInformationMessage(`You have execute '${iconValue}' successfully!`);
           resolve(null);
         });
