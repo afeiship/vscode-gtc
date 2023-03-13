@@ -7,8 +7,8 @@ import gtcInit from './gtc.init';
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-  let cmd1 = vscode.commands.registerCommand('vscode-gtc.gtc', async () => await gtcCore());
-  let cmd2 = vscode.commands.registerCommand('vscode-gtc.gtc:init', async () => await gtcInit());
+  let cmd1 = vscode.commands.registerCommand('vscode-gtc.gtc', gtcCore);
+  let cmd2 = vscode.commands.registerCommand('vscode-gtc.gtc:init', gtcInit);
   context.subscriptions.push(cmd1, cmd2);
 }
 

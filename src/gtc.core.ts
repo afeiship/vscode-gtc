@@ -7,8 +7,8 @@ import noop from '@jswork/noop';
 import { ensureGtcrc, ensurePkg, udpatePkg } from './_misc';
 const workspaceFolders = vscode.workspace.workspaceFolders;
 
-export default async () => {
-  if (!workspaceFolders) return Promise.resolve({ dispose: noop });
+export default () => {
+  if (!workspaceFolders) return { dispose: noop };
 
   const userDir = workspaceFolders[0].uri.fsPath;
   const packageJsonPath = ensurePkg(path.resolve(userDir, 'package.json'));

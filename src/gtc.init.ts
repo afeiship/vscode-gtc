@@ -6,7 +6,7 @@ import { ensureGtcrc } from './_misc';
 const workspaceFolders = vscode.workspace.workspaceFolders;
 
 export default () => {
-  if (!workspaceFolders) return Promise.resolve({ dispose: noop });
+  if (!workspaceFolders) return { dispose: noop };
   const userDir = workspaceFolders[0].uri.fsPath;
   const targetPath = path.join(userDir, '.gtcrc');
   ensureGtcrc(targetPath);
