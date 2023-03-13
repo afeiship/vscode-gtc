@@ -4,6 +4,10 @@
   "description": "Gtc extension for vscode.",
   "version": "1.0.19",
   "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/vscode-gtc"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
