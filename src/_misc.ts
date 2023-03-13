@@ -2,6 +2,7 @@ import fs from 'fs';
 import prettier from 'prettier';
 import { DEFAULT_COMMANDS } from '@jswork/node-gtc';
 
+// to standalone package
 export const udpatePkg = (inPkgPath: string, inObj: Record<string, string>) => {
   // read package.json
   const pkg = JSON.parse(fs.readFileSync(inPkgPath).toString());
