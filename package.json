@@ -29,7 +29,7 @@
         "command": "vscode-gtc.gtc",
         "key": "command+shift+t",
         "mac": "ctrl+shift+t",
-        "when": "editorTextFocus"
+        "when": "true"
       }
     ],
     "languages": [
