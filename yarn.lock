@@ -46,10 +46,10 @@
   resolved "https://registry.npmmirror.com/@jswork/kiv/-/kiv-1.0.2.tgz#bcd745f0d47144bdab2a8dea4e6628d6f7b1204d"
   integrity sha512-Q9oQQfuj1vTucGh45YcRaTJ5srqBQnlGy4ioqlAY9t16q9y4/UWsnxeMUGr6vwgR+LQrk0+zFwjWQTPkoicVbw==
 
-"@jswork/node-gtc@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/@jswork/node-gtc/-/node-gtc-1.0.5.tgz#e4cdb1ec0efd8f0e793b34c901d02dab95ccef75"
-  integrity sha512-B8lfuJVyRTI2ftWaM/MJoblFgV6bMZwbVjLjA55EsbWx5Ut2ghbAdKb4qY/FE+t9rPZnXktZ31tffr9G1RVlEw==
+"@jswork/node-gtc@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@jswork/node-gtc/-/node-gtc-1.0.6.tgz#1bf7f292ab4af0ffee35580aaaa6be24a9abe403"
+  integrity sha512-oToJm/s4cAK1ZpXUKIQ3oD5bdcuEFtjoeOij/U4v8jvNG4TA/pWTY0LTjazGdh+M28ntPvFOl0cc/r/2qUiLnA==
   dependencies:
     "@jswork/kiv" "^1.0.2"
     dateformat "^3.0.3"
