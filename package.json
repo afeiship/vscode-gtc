@@ -56,7 +56,8 @@
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
+    "watch": "tsc -watch -p ./",
+    "release": "release-it"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
