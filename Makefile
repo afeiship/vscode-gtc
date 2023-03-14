@@ -6,8 +6,15 @@ PLUGIN_NAME = vscode-gtc
 publish:
 	@echo "Publishing $(PLUGIN_NAME)..."
 	@npm version patch
-	@vsce publish --yarn
-	@git push && git push --tags
-	# get new version number
 	PLUGIN_VERSION=`node -p "require('./package.json').version"`
-	@gh release create $(PLUGIN_VERSION) -t "$(PLUGIN_VERSION)" -b "Release $(PLUGIN_VERSION)"
+	RELEASE_TAG="$(PLUGIN_VERSION)"
+
+	# publish to vsce marketplace
+	@vsce publish --yarn
+	@git add . && git commit -m "Release $(PLUGIN_VERSION)"
+	@git push && git push --tags
+	
+	# github release
+	@gh release create $(RELEASE_TAG) \
+	--title "$(RELEASE_TAG)" \
+	--notes "Release $(RELEASE_TAG)"
