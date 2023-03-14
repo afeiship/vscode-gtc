@@ -7,6 +7,7 @@ publish:
 	@echo "Publishing $(PLUGIN_NAME)..."
 	npm version patch
 	@git commit -am "chore: Bump patch version"
+	sleep 1
 	$(eval PLUGIN_VERSION := $(shell npm pkg get version | xargs echo))
 	RELEASE_TAG="$(PLUGIN_VERSION)"
 
