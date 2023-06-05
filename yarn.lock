@@ -46,13 +46,14 @@
   resolved "https://registry.npmmirror.com/@jswork/kiv/-/kiv-1.0.2.tgz#bcd745f0d47144bdab2a8dea4e6628d6f7b1204d"
   integrity sha512-Q9oQQfuj1vTucGh45YcRaTJ5srqBQnlGy4ioqlAY9t16q9y4/UWsnxeMUGr6vwgR+LQrk0+zFwjWQTPkoicVbw==
 
-"@jswork/node-gtc@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/@jswork/node-gtc/-/node-gtc-1.0.6.tgz#1bf7f292ab4af0ffee35580aaaa6be24a9abe403"
-  integrity sha512-oToJm/s4cAK1ZpXUKIQ3oD5bdcuEFtjoeOij/U4v8jvNG4TA/pWTY0LTjazGdh+M28ntPvFOl0cc/r/2qUiLnA==
+"@jswork/node-gtc@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/@jswork/node-gtc/-/node-gtc-1.0.8.tgz#06e4296578a17714240159825495b74721bc7554"
+  integrity sha512-IR5e5tbTKMsTrn78DhUdpi55jZVm5EJnW+mWIABej0g4hMtNPtkdL+qjPrqHHAZeS/M8PZYwWHy7vZ8ChLzw5w==
   dependencies:
     "@jswork/kiv" "^1.0.2"
     dateformat "^3.0.3"
+    semver "^7.5.1"
 
 "@jswork/noop@^1.0.0":
   version "1.0.0"
@@ -1180,6 +1181,13 @@ semver@^7.3.7, semver@^7.3.8:
   version "7.3.8"
   resolved "https://registry.npmjs.org/semver/-/semver-7.3.8.tgz#07a78feafb3f7b32347d725e33de7e2a2df67798"
   integrity sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==
+  dependencies:
+    lru-cache "^6.0.0"
+
+semver@^7.5.1:
+  version "7.5.1"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.5.1.tgz#c90c4d631cf74720e46b21c1d37ea07edfab91ec"
+  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
   dependencies:
     lru-cache "^6.0.0"
 

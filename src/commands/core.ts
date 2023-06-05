@@ -1,10 +1,21 @@
 import * as vscode from 'vscode';
 import fs from 'fs';
-import { nodeGtc } from '@jswork/node-gtc';
+import { nodeGtc, GtcVersion } from '@jswork/node-gtc';
 import { execSync } from 'child_process';
 import path from 'path';
 import { ensureGtcrc, ensurePkg, udpatePkg } from '../_misc';
 const workspaceFolders = vscode.workspace.workspaceFolders;
+
+const getGtcVersion = (inCmd, inPkg, inOptions) => {
+  const { autoVersion } = inOptions;
+  const isProduction = inCmd === 'production';
+  const isCache = inCmd === 'cache';
+  const curGtcVersion = inPkg.gtcVersion || '1.0.0';
+  const method = isProduction ? 'release' : 'patch';
+  const identity = isCache ? 'beta' : inCmd;
+  const newGtcVersion = GtcVersion[method](curGtcVersion, identity);
+  return autoVersion ? newGtcVersion : curGtcVersion;
+};
 
 export default class GtcCoreCommand {
   static execute() {
@@ -28,7 +39,8 @@ export default class GtcCoreCommand {
 
       try {
         // 1. udpate package.json
-        udpatePkg(packageJsonPath, { gtc: message });
+        const gtcVersion = getGtcVersion(selection.value, packageJsonPath, options);
+        udpatePkg(packageJsonPath, { gtc: message, gtcVersion });
         // 2. use gtc publish
         vscode.window.withProgress(progressOpts, () => {
           cmds.unshift(`cd ${userDir}`);
