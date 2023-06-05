@@ -39,7 +39,8 @@ export default class GtcCoreCommand {
 
       try {
         // 1. udpate package.json
-        const gtcVersion = getGtcVersion(selection.value, packageJsonPath, options);
+        const pkg = require(packageJsonPath);
+        const gtcVersion = getGtcVersion(selection.value, pkg, options);
         udpatePkg(packageJsonPath, { gtc: message, gtcVersion });
         // 2. use gtc publish
         vscode.window.withProgress(progressOpts, () => {
